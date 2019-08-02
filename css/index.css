@@ -255,7 +255,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
-    width: 100rem;
+    width: 100%;
   }
 }
 .home .content-section .text-content {
@@ -265,6 +265,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     padding-left: 2rem;
+    width: 100%;
   }
 }
 .home .content-section .img-content {
