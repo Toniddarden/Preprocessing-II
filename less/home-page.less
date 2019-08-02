@@ -15,7 +15,7 @@
       border-bottom: 2px dashed rgb(196, 194, 194);
 
       @media @mobile {
-       padding-left: 2rem;
+        padding-left: 2rem;
       }
     }
   }
@@ -67,11 +67,21 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding-left: 2rem;
+        width: 100%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 3%;
+      }
     }
   }
 
@@ -81,7 +91,6 @@
 
     img {
       border-radius: 10px;
-
     }
   }
 
@@ -91,8 +100,14 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+
     .destination {
-      width: 30%;
+      width: 90%;
+      padding-left: 2rem;
       margin-bottom: 30px;
     }
   }

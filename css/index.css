@@ -2,8 +2,8 @@
   font-size: 2rem;
   color: white;
   text-align: center;
-  background-color: #1b7c83;
-  padding: 5%;
+  background-color: #13a0aa;
+  padding: 3%;
   border-radius: 12px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -294,9 +294,21 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    padding-left: 2rem;
+    width: 100%;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0%;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding-left: 3%;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -311,7 +323,14 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
-  width: 30%;
+  width: 90%;
+  padding-left: 2rem;
   margin-bottom: 30px;
 }
