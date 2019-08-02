@@ -1,9 +1,21 @@
+// Mixins
 
 .text-media() {
   padding-left: 2rem;
   width: 100%;
 }
 
+.img-media() {
+  width: 100%;
+  padding-left: 3%;
+}
+
+.content-media() {
+  flex-direction: column;
+  width: 100%;
+}
+
+// start
 
 .home {
   .fun-bus {
@@ -34,8 +46,7 @@
     justify-content: space-between;
 
     @media @mobile {
-      flex-direction: column;
-      width: 100%;
+      .content-media();
     }
 
     .text-content {
@@ -45,10 +56,6 @@
       @media @mobile {
         .text-media();
       }
-      // @media @mobile {
-      //   padding-left: 2rem;
-      //   width: 100%;
-      // }
     }
 
     .img-content {
@@ -56,8 +63,7 @@
       padding-left: 1%;
 
       @media @mobile {
-        width: 100%;
-        padding-left: 3%;
+        .img-media();
       }
 
       img {
@@ -81,10 +87,6 @@
       @media @mobile {
         .text-media();
       }
-      // @media @mobile {
-      //   padding-left: 2rem;
-      //   width: 100%;
-      // }
     }
 
     .img-content {
@@ -92,8 +94,7 @@
       padding-left: 0%;
 
       @media @mobile {
-        width: 100%;
-        padding-left: 3%;
+        .img-media();
       }
     }
   }
@@ -114,8 +115,7 @@
     justify-content: space-between;
 
     @media @mobile {
-      flex-direction: column;
-      width: 100%;
+      .content-media();
     }
 
     .destination {
@@ -124,4 +124,4 @@
       margin-bottom: 30px;
     }
   }
-} // home
+}
